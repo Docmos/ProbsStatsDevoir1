@@ -38,7 +38,7 @@ public class ProbsStatsDevoir1 {
     }
 
     private static boolean aNPersonnesAvecMemeJourDeFete(List<Personne> groupe, int nombrePersonnesAvecMemeJourDeFete) {
-        var a3PersonnesAvecMemeJourDeFete = false;
+        var aNPersonnesAvecMemeJourDeFete = false;
         final var groupeCopie = new ArrayList<>(groupe);
         for (final var personne : groupe) {
             var personnesAvecMemeJourDeFete = 1;
@@ -48,7 +48,7 @@ public class ProbsStatsDevoir1 {
                     personnesAvecMemeJourDeFete++;
                 }
                 if (personnesAvecMemeJourDeFete == nombrePersonnesAvecMemeJourDeFete) {
-                    a3PersonnesAvecMemeJourDeFete = true;
+                    aNPersonnesAvecMemeJourDeFete = true;
                     break;
                 }
             }
@@ -56,6 +56,6 @@ public class ProbsStatsDevoir1 {
                 break;
             }
         }
-        return a3PersonnesAvecMemeJourDeFete;
+        return aNPersonnesAvecMemeJourDeFete;
     }
 }
